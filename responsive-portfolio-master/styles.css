@@ -1,0 +1,70 @@
+.body, p, a {
+  font-family: poppins;
+  height: 100%;
+
+}
+
+p.card-text {
+  font-size: 1.2rem;
+}
+.img-thumbnail {
+  height: 1.5rem;
+  border: none;
+}
+
+.section-img {
+  box-shadow: 10px 10px 10px grey;
+}
+.navbar-bg-color {
+  color: #fff;
+  background-color: #24292e;
+}
+.site-body {
+  background-color: lightgray;
+  background-image: url(https://images.unsplash.com/photo-1527049979667-990f1d0d8e7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80);
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+.site-footer {
+    display: inline-block;font-family: poppins;
+  color: #007bff;
+  background-color: #24292e;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  flex: 1 0 auto;
+  flex-shrink: none;
+  padding-top: 10px;
+
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 640px or less.
+*/
+
+@media screen and (min-width: 640px) {
+  #navBrandBig {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #navBrand {
+    display: none !important;
+  }
+  #navCentre {
+    justify-content: center;
+  }
+  #profPic,
+  #skillsImg {
+    display: inline-block;
+  }
+  p {
+    text-justify: center;
+    padding: 10px;
+  }
+}
